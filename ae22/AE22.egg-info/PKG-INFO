@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: AE22
+Version: 0.0.1
+Summary: Quicksample Test Package for SQLShack Demo
+Home-page: UNKNOWN
+Author: Vitalija Serapinaite
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# AE22 feature extraction package
+Package extracts features from time series using autoencoder trained on UAE & UCR datasets. 
+Autoencoder was trained to extract 22 features out of 88 length time series. When time series are larger than 88, multiple windows are created and features are extracted out of them.
+
+Example:
+
+```
+ae = AE22()
+example = np.zeros((2, 180))
+example_results = ae.transform(example)
+
+```
+
